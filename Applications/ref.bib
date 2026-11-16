@@ -1,0 +1,80 @@
+@inproceedings{Krishnaswami:POPL15,
+author = {Krishnaswami, Neelakantan R. and Pradic, C{\'e}cilia and Benton, Nick},
+title = {Integrating Linear and Dependent Types},
+year = {2015},
+isbn = {9781450333009},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/2676726.2676969},
+doi = {10.1145/2676726.2676969},
+abstract = {In this paper, we show how to integrate linear types with type dependency, by extending the linear/non-linear calculus of Benton to support type dependency. Next, we give an application of this calculus by giving a proof-theoretic account of imperative programming, which requires extending the calculus with computationally irrelevant quantification, proof irrelevance, and a monad of computations. We show the soundness of our theory by giving a realizability model in the style of Nuprl, which permits us to validate not only the beta-laws for each type, but also the eta-laws. These extensions permit us to decompose Hoare triples into a collection of simpler type-theoretic connectives, yielding a rich equational theory for dependently-typed higher-order imperative programs. Furthermore, both the type theory and its model are relatively simple, even when all of the extensions are considered.},
+booktitle = {Proceedings of the 42nd Annual ACM SIGPLAN-SIGACT Symposium on Principles of Programming Languages},
+pages = {17–30},
+numpages = {14},
+keywords = {dependent types, hoare triples, intersection types, linear types, proof irrelevance, separation logic},
+location = {Mumbai, India},
+series = {POPL '15}
+}
+
+@article{DalLago:LMCS12,
+    title      = {Linear Dependent Types and Relative Completeness},
+    author     = {Ugo Dal Lago and Marco Gaboardi},
+    url        = {https://lmcs.episciences.org/974},
+    doi        = {10.2168/LMCS-8(4:11)2012},
+    journal    = {Logical Methods in Computer Science},
+    issn       = {1860-5974},
+    volume     = {Volume 8, Issue 4},
+    eid        = 11,
+    year       = {2012},
+    month      = {Oct}
+}
+
+@article{Fu:LMCS22,
+    title      = {Linear Dependent Type Theory for Quantum Programming Languages},
+    author     = {Peng Fu and Kohei Kishida and Peter Selinger},
+    url        = {https://lmcs.episciences.org/6930},
+    doi        = {10.46298/lmcs-18(3:28)2022},
+    journal    = {Logical Methods in Computer Science},
+    issn       = {1860-5974},
+    volume     = {Volume 18, Issue 3},
+    eid        = 28,
+    year       = {2022},
+    month      = {Sep}
+}
+
+@inproceedings{Atkey:LICS18,
+author = {Atkey, Robert},
+title = {Syntax and Semantics of Quantitative Type Theory},
+year = {2018},
+isbn = {9781450355834},
+publisher = {Association for Computing Machinery},
+address = {New York, NY, USA},
+url = {https://doi.org/10.1145/3209108.3209189},
+doi = {10.1145/3209108.3209189},
+abstract = {We present Quantitative Type Theory, a Type Theory that records usage information for each variable in a judgement, based on a previous system by McBride. The usage information is used to give a realizability semantics using a variant of Linear Combinatory Algebras, refining the usual realizability semantics of Type Theory by accurately tracking resource behaviour. We define the semantics in terms of Quantitative Categories with Families, a novel extension of Categories with Families for modelling resource sensitive type theories.},
+booktitle = {Proceedings of the 33rd Annual ACM/IEEE Symposium on Logic in Computer Science},
+pages = {56–65},
+numpages = {10},
+keywords = {Linear Logic, Type Theory},
+location = {Oxford, United Kingdom},
+series = {LICS '18}
+}
+
+@Inbook{McBride:LNCS16,
+author="McBride, Conor",
+editor="Lindley, Sam
+and McBride, Conor
+and Trinder, Phil
+and Sannella, Don",
+title="I Got Plenty o' Nuttin'",
+bookTitle="A List of Successes That Can Change the World: Essays Dedicated to Philip Wadler on the Occasion of His 60th Birthday",
+year="2016",
+publisher="Springer International Publishing",
+address="Cham",
+pages="207--233",
+abstract="Work to date on combining linear types and dependent types has deliberately and successfully avoided doing so. Entirely fit for their own purposes, such systems wisely insist that types depend only on the replicable sublanguage, thus sidestepping the issue of counting uses of limited-use data either within types or in ways which are only really needed to shut the typechecker up. As a result, the linear implication (`lollipop') stubbornly remains a non-dependent {\$}{\$}S {\backslash}multimap T{\$}{\$}S⊸T. This paper defines and establishes the basic metatheory of a type theory supporting a `dependent lollipop' {\$}{\$}(x{\backslash}!:{\backslash}!S){\backslash}multimap T[x]{\$}{\$}(x:S)⊸T[x], where what the input used to be is in some way commemorated by the type of the output. For example, we might convert list to length-indexed vectors in place by a function with type {\$}{\$}(l{\backslash}!:{\backslash}!{\backslash}mathsf {\{}List{\}}{\backslash},X){\backslash}multimap {\backslash}mathsf {\{}Vector{\}}{\backslash},X{\backslash},({\backslash}mathsf {\{}length{\}}{\backslash},l){\$}{\$}(l:ListX)⊸VectorX(lengthl). Usage is tracked with resource annotations belonging to an arbitrary rig, or `riNg without Negation'. The key insight is to use the rig's zero to mark information in contexts which is present for purposes of contemplation rather than consumption, like a meal we remember fondly but cannot eat twice. We need no runtime copies of l to form the above vector type. We can have plenty of nothing with no additional runtime resource, and nothing is plenty for the construction of dependent types.",
+isbn="978-3-319-30936-1",
+doi="10.1007/978-3-319-30936-1_12",
+url="https://doi.org/10.1007/978-3-319-30936-1_12"
+}
+
